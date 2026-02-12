@@ -12,7 +12,7 @@ The goal of this project is to demonstrate how to deploy a private database arch
 
 ---
 
-# 🎯 What This Project Creates
+# What This Project Creates
 
 When deployed, this Terraform configuration provisions:
 
@@ -46,7 +46,7 @@ This mirrors real-world production setups.
 
 ---
 
-# 🧠 How It Works (Conceptual Overview)
+# How It Works (Conceptual Overview)
 
 Cloud SQL does not live directly inside your VPC.  
 Instead, it runs inside a Google-managed service network.
@@ -61,7 +61,7 @@ This allows the database to receive an internal IP from your VPC and communicate
 
 ---
 
-# 🛠 Prerequisites
+# Prerequisites
 
 Ensure the following are installed:
 
@@ -82,7 +82,7 @@ gcloud services enable \
   sqladmin.googleapis.com \
   secretmanager.googleapis.com
 
-⚙️ Configuration
+ Configuration
 
 You can configure variables in two ways:
 
@@ -96,7 +96,7 @@ project_id  = "your-gcp-project-id"
 region      = "us-central1"
 db_password = "your-secure-password"
 
-🚀 Deployment Steps
+ Deployment Steps
 
 Navigate to the desired environment:
 
@@ -120,7 +120,7 @@ terraform apply
 
 Confirm with yes when prompted.
 
-📤 Outputs
+ Outputs
 
 After successful deployment, Terraform outputs:
 
@@ -134,7 +134,7 @@ Cloud SQL
 
 Secret Manager
 
-🔄 Destroy Infrastructure
+ Destroy Infrastructure
 
 To remove all provisioned resources:
 
